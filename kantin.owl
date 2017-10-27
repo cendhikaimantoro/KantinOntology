@@ -1,0 +1,214 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#"
+     xml:base="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#HasActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#HasActor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#HasTarget -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#HasTarget">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Action"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Action">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#HasActor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#HasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#ColdDrink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#ColdDrink">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Drink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Drink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Drink">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Entity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Entity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Food">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Karyawan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Karyawan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Pelanggan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Memanaskan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Memanaskan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Action"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#HasTarget"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Food"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#HasTarget"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#WarmDrink"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#HasActor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Karyawan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Memesan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Memesan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#HasTarget"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Product"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#HasActor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Pelanggan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Pelanggan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Pelanggan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Product">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#WarmDrink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#WarmDrink">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Drink"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Kopi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Kopi"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
