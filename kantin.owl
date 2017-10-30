@@ -76,6 +76,36 @@
     <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#AlatMakan">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Property"/>
     </owl:Class>
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Beef -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Beef">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#RawIngredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Capcay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Capcay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Chicken -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Chicken">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#RawIngredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#CoffeeBean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#CoffeeBean">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#RawIngredients"/>
+    </owl:Class>
     
 
 
@@ -118,6 +148,46 @@
     
 
 
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#HotCoffee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#HotCoffee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#WarmDrink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#HotTea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#HotTea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#WarmDrink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#IceCube -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#IceCube">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#RawIngredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#IcedCoffee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#IcedCoffee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#ColdDrink"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#IcedTea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#IcedTea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#ColdDrink"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Karyawan -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Karyawan">
@@ -145,6 +215,12 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Meracik"/>
+    </owl:Class>
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#MSG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#MSG">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#RawIngredients"/>
     </owl:Class>
     
 
@@ -230,6 +306,12 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#NasiEmpal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#NasiEmpal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Food"/>
+    </owl:Class>
     
 
 
@@ -293,6 +375,11 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#NasiKatsu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#NasiKatsu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Food"/>
+    </owl:Class>
     
 
 
@@ -325,6 +412,12 @@
     <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Property">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Entity"/>
     </owl:Class>
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#RawIngredients -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#RawIngredients">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Entity"/>
+    </owl:Class>
     
 
 
@@ -332,6 +425,36 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Ruang">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Property"/>
+    </owl:Class>
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Rice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Rice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#RawIngredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#SopIga -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#SopIga">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#TeaLeaves -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#TeaLeaves">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#RawIngredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Vegetable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Vegetable">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#RawIngredients"/>
     </owl:Class>
     
 
