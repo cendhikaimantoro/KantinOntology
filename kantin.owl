@@ -55,6 +55,65 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#divisi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#divisi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#gender">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#n_anak -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#n_anak">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#no_hp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#no_hp">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#pekerjaan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#pekerjaan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#people_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#people_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
