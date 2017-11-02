@@ -609,6 +609,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Yuanyang_Tea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Yuanyang_Tea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#WarmDrink"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#CoffeeBean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#TeaLeaves"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //

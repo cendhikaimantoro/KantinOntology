@@ -59,5 +59,25 @@ source		SELECT * FROM product_ingredient WHERE id_product = (SELECT id_product F
 mappingId	SopIgaIngredient
 target		:{id_product} a :Food ; :contains :{id_ingredient} . 
 source		SELECT * FROM product_ingredient WHERE id_product = (SELECT id_product FROM product WHERE nama = 'SopIga')
+
+mappingId	IcedCoffeeIngredient
+target		:{id_product} a :ColdDrink ; :contains :{id_ingredient} . 
+source		SELECT * FROM product_ingredient WHERE id_product = (SELECT id_product FROM product WHERE nama = 'IcedCoffee')
+
+mappingId	IcedTeaIngredient
+target		:{id_product} a :ColdDrink ; :contains :{id_ingredient} . 
+source		SELECT * FROM product_ingredient WHERE id_product = (SELECT id_product FROM product WHERE nama = 'IcedTea')
+
+mappingId	HotCoffeeIngredient
+target		:{id_product} a :WarmDrink ; :contains :{id_ingredient} . 
+source		SELECT * FROM product_ingredient WHERE id_product = (SELECT id_product FROM product WHERE nama = 'HotCoffee')
+
+mappingId	HotTeaIngredient
+target		:{id_product} a :WarmDrink ; :contains :{id_ingredient} . 
+source		SELECT * FROM product_ingredient WHERE id_product = (SELECT id_product FROM product WHERE nama = 'HotTea')
+
+mappingId	YuanyangTeaIngredient
+target		:{id_product} a :ColdDrink ; :contains :{id_ingredient} . 
+source		SELECT * FROM product_ingredient WHERE id_product = (SELECT id_product FROM product WHERE nama = 'Yuanyang Tea')
 ]]
 
