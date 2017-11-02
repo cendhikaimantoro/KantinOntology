@@ -9,11 +9,39 @@ rdfs:		http://www.w3.org/2000/01/rdf-schema#
 
 [MappingDeclaration] @collection [[
 mappingId	MAPID-8c8a3f04c8194382bb52698d3e6d701e
-target		:{id} a :Action ; :HasActor {name} . 
+target		:{id} a :Action ; :HasActor :{nama} . 
 source		SELECT * FROM produk
 
-mappingId	Product
+mappingId	Beef
 target		:{id} a :Beef . 
-source		SELECT * FROM produk
+source		SELECT * FROM raw_ingredient WHERE nama = 'Beef'
+
+mappingId	Chicken
+target		:{id} a :Chicken . 
+source		SELECT * FROM raw_ingredient WHERE nama = 'Chicken'
+
+mappingId	CoffeeBean
+target		:{id} a :CoffeeBean . 
+source		SELECT * FROM raw_ingredient WHERE nama = 'CoffeeBean'
+
+mappingId	IceCube
+target		:{id} a :IceCube . 
+source		SELECT * FROM raw_ingredient WHERE nama = 'IceCube'
+
+mappingId	MSG
+target		:{id} a :MSG . 
+source		SELECT * FROM raw_ingredient WHERE nama = 'MSG'
+
+mappingId	Rice
+target		:{id} a :Rice . 
+source		SELECT * FROM raw_ingredient WHERE nama = 'Rice'
+
+mappingId	TeaLeaves
+target		:{id} a :TeaLeaves . 
+source		SELECT * FROM raw_ingredient WHERE nama = 'TeaLeaves'
+
+mappingId	Vegetable
+target		:{id} a :Vegetable . 
+source		SELECT * FROM raw_ingredient WHERE nama = 'Vegetable'
 ]]
 
