@@ -1,0 +1,19 @@
+[PrefixDeclaration]
+:		http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#
+owl:		http://www.w3.org/2002/07/owl#
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+xml:		http://www.w3.org/XML/1998/namespace
+xsd:		http://www.w3.org/2001/XMLSchema#
+obda:		https://w3id.org/obda/vocabulary#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+
+[MappingDeclaration] @collection [[
+mappingId	MAPID-8c8a3f04c8194382bb52698d3e6d701e
+target		:{id} a :Action ; :HasActor {name} . 
+source		SELECT * FROM produk
+
+mappingId	Product
+target		:{id} a :Beef . 
+source		SELECT * FROM produk
+]]
+
