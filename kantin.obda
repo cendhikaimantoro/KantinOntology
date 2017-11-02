@@ -43,5 +43,21 @@ source		SELECT * FROM raw_ingredient WHERE nama = 'TeaLeaves'
 mappingId	Vegetable
 target		:{id} a :Vegetable . 
 source		SELECT * FROM raw_ingredient WHERE nama = 'Vegetable'
+
+mappingId	CapcayIngredient
+target		:{id_product} a :Food ; :contains :{id_ingredient} . 
+source		SELECT * FROM product_ingredient WHERE id_product = (SELECT id_product FROM product WHERE nama = 'Capcay')
+
+mappingId	NasiEmpalIngredient
+target		:{id_product} a :Food ; :contains :{id_ingredient} . 
+source		SELECT * FROM product_ingredient WHERE id_product = (SELECT id_product FROM product WHERE nama = 'NasiEmpal')
+
+mappingId	NasiKatsuIngredient
+target		:{id_product} a :Food ; :contains :{id_ingredient} . 
+source		SELECT * FROM product_ingredient WHERE id_product = (SELECT id_product FROM product WHERE nama = 'NasiKatsu')
+
+mappingId	SopIgaIngredient
+target		:{id_product} a :Food ; :contains :{id_ingredient} . 
+source		SELECT * FROM product_ingredient WHERE id_product = (SELECT id_product FROM product WHERE nama = 'SopIga')
 ]]
 
