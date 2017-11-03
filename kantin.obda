@@ -27,5 +27,10 @@ source		SELECT * FROM product WHERE jenis='Food';
 mappingId	DrinkItem
 target		:{id_product} a :Drink ; :drink_name {nama} ; :price {harga} ; :drink_type {jenis} . 
 source		SELECT * FROM product WHERE jenis = 'ColdDrink' OR jenis = 'WarmDrink';
+
+mappingId	MSGFoodItem
+target		:{id_product} a :MSGFood ; :food_name {nama} ; :price {harga} . 
+source		SELECT * FROM product WHERE id_product IN
+			(SELECT id_product FROM product_ingredient WHERE jenis = 'Food' AND id_ingredient = (SELECT id_ingredient FROM raw_ingredient WHERE nama = 'MSG'))
 ]]
 
