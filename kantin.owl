@@ -71,26 +71,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#drink_name -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#drink_name">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#drink_type -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#drink_type"/>
-    
-
-
-    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#food_name -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#food_name"/>
-    
-
-
     <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#gender -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#gender">
@@ -112,6 +92,12 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#n_anak">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#name"/>
     
 
 
@@ -144,6 +130,12 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#price">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#type"/>
     
 
 

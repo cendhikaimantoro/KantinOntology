@@ -20,16 +20,16 @@ mappingId	CapcayIngredient
 target		:{id_product} a :Capcay ; :contains :{id_ingredient} . 
 source		SELECT * FROM product_ingredient WHERE id_product = (SELECT id_product FROM product WHERE nama = 'Capcay')
 
-mappingId	FoodItem
-target		:{id_product} a :Food ; :food_name {nama} ; :price {harga} . 
-source		SELECT * FROM product WHERE jenis='Food';
-
 mappingId	DrinkItem
-target		:{id_product} a :Drink ; :drink_name {nama} ; :price {harga} ; :drink_type {jenis} . 
+target		:{id_product} a :Drink ; :name {nama} ; :price {harga} ; :type {jenis} . 
 source		SELECT * FROM product WHERE jenis = 'ColdDrink' OR jenis = 'WarmDrink';
 
+mappingId	FoodItem
+target		:{id_product} a :Food ; :name {nama} ; :price {harga} ; :type {jenis} . 
+source		SELECT * FROM product WHERE jenis='Food';
+
 mappingId	MSGFoodItem
-target		:{id_product} a :MSGFood ; :food_name {nama} ; :price {harga} . 
+target		:{id_product} a :MSGFood ; :name {nama} ; :price {harga} ; :type {jenis} . 
 source		SELECT * FROM product WHERE id_product IN
 			(SELECT id_product FROM product_ingredient WHERE jenis = 'Food' AND id_ingredient = (SELECT id_ingredient FROM raw_ingredient WHERE nama = 'MSG'))
 ]]
