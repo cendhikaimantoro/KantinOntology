@@ -19,5 +19,13 @@ source		SELECT * FROM pelanggan;
 mappingId	CapcayIngredient
 target		:{id_product} a :Capcay ; :contains :{id_ingredient} . 
 source		SELECT * FROM product_ingredient WHERE id_product = (SELECT id_product FROM product WHERE nama = 'Capcay')
+
+mappingId	FoodItem
+target		:{id_product} a :Food ; :food_name {nama} ; :price {harga} . 
+source		SELECT * FROM product WHERE jenis='Food';
+
+mappingId	DrinkItem
+target		:{id_product} a :Drink ; :drink_name {nama} ; :price {harga} ; :drink_type {jenis} . 
+source		SELECT * FROM product WHERE jenis = 'ColdDrink' OR jenis = 'WarmDrink';
 ]]
 
