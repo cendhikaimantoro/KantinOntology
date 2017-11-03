@@ -9,11 +9,15 @@ rdfs:		http://www.w3.org/2000/01/rdf-schema#
 
 [MappingDeclaration] @collection [[
 mappingId	KaryawanItem
-target		:{id_karyawan} a :Karyawan ; :people_name {nama} ; :gender {gender} ; :n_anak {n_anak} ; :no_hp {np_hp} ; :divisi {divisi} . 
+target		:{id_karyawan} a :Karyawan ; :karyawan_name {nama} ; :gender {gender} ; :n_anak {n_anak} ; :no_hp {no_hp} ; :divisi {divisi} . 
 source		SELECT * FROM karyawan;
 
 mappingId	PelangganItem
-target		:{id_pelanggan} a :Pelanggan . 
+target		:{id_pelanggan} a :Pelanggan ; :people_name {nama} ; :pekerjaan {pekerjaan} . 
 source		SELECT * FROM pelanggan;
+
+mappingId	CapcayIngredient
+target		:{id_product} a :Capcay ; :contains :{id_ingredient} . 
+source		SELECT * FROM product_ingredient WHERE id_product = (SELECT id_product FROM product WHERE nama = 'Capcay')
 ]]
 
