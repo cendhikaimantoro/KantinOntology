@@ -32,5 +32,9 @@ mappingId	MSGFoodItem
 target		:{id_product} a :MSGFood ; :name {nama} ; :price {harga} ; :type {jenis} . 
 source		SELECT * FROM product WHERE id_product IN
 			(SELECT id_product FROM product_ingredient WHERE jenis = 'Food' AND id_ingredient = (SELECT id_ingredient FROM raw_ingredient WHERE nama = 'MSG'))
+
+mappingId	VegetarianFoodItem
+target		:{id_product} a :VegetarianFood ; :name {nama} ; :price {harga} ; :type {jenis} . 
+source		SELECT * FROM product WHERE jenis = 'Food' AND id_product NOT IN (SELECT id_product FROM product_ingredient WHERE jenis = 'Food' AND (id_ingredient = (SELECT id_ingredient FROM raw_ingredient WHERE nama = 'Chicken') OR id_ingredient = (SELECT id_ingredient FROM raw_ingredient WHERE nama = 'Beef')))
 ]]
 

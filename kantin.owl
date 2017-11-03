@@ -696,6 +696,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#VegetarianFood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#VegetarianFood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#Product"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#WarmDrink -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/asus-a451lb/ontologies/2017/9/untitled-ontology-5#WarmDrink">
